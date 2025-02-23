@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Модель предсказания</title>
+</head>
+<body>
+<h1>Предсказание соотношения матрица-наполнитель</h1>
+    <form method="post" class="sheet-form">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.density.label }}<br>
+            {{ form.density }}<br>
+            {% for error in form.density.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.modulus_of_elasticity.label }}<br>
+            {{ form.modulus_of_elasticity }}<br>
+            {% for error in form.modulus_of_elasticity.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+      <p>
+            {{ form.amount_of_hardener.label }}<br>
+            {{ form.amount_of_hardener }}<br>
+            {% for error in form.amount_of_hardener.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.content_of_epoxy_groups.label }}<br>
+            {{ form.content_of_epoxy_groups }}<br>
+            {% for error in form.content_of_epoxy_groups.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.flash_point.label }}<br>
+            {{ form.flash_point }}<br>
+            {% for error in form.flash_point.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.surface_density.label }}<br>
+            {{ form.surface_density }}<br>
+            {% for error in form.surface_density.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.tensile_modulus.label }}<br>
+            {{ form.tensile_modulus }}<br>
+            {% for error in form.tensile_modulus.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+
+        <p>
+            {{ form.tensile_strength.label }}<br>
+            {{ form.tensile_strength }}<br>
+            {% for error in form.tensile_strength.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.resin_consumption.label }}<br>
+            {{ form.resin_consumption }}<br>
+            {% for error in form.resin_consumption.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.patch_angle.label }}<br>
+            {{ form.patch_angle }}<br>
+            {% for error in form.patch_angle.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.patch_pitch.label }}<br>
+            {{ form.patch_pitch }}<br>
+            {% for error in form.patch_pitch.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.patch_density.label }}<br>
+            {{ form.patch_density }}<br>
+            {% for error in form.patch_density.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit(class_="btn") }}</p>
+    </form
+</body>
+</html>
